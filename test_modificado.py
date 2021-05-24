@@ -1,5 +1,5 @@
 x = 2
-texto=''
+texto = ''
 if x < 0:
     texto = 'Negative changed to zero'
 elif x == 0:
