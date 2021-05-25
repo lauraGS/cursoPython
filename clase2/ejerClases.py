@@ -4,8 +4,8 @@ class Animal():
         self.isVivo = True
 
     def vivo(self):
-       print("Está vivo")
-       return self.isVivo
+        print("Está vivo")
+        return self.isVivo
 
 
 class Gato(Animal):
@@ -17,7 +17,7 @@ class Gato(Animal):
         print("Está durmiendo!")
 
     def ronrronear(self):
-       print("rrrrrrr!")
+        print("rrrrrrr!")
 
     def maullar(self):
         print("Miau")
