@@ -9,3 +9,7 @@ print("El año actual es {}".format(today.year))
 print("La hora actual es {}".format(today.hour))
 print("El minuto actual es {}".format(today.minute))
 print("El segundo actual es {}".format(today.second))
+
+now = datetime.now()
+format = now.strftime('Día :%d, Mes: %m, Año: %Y, Hora: %H, Minutos: %M, Segundos: %S')
+print(format)
