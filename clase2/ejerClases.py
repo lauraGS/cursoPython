@@ -9,8 +9,7 @@ class Animal():
 
 
 class Gato(Animal):
-    
-      
+          
     def correr(self):
         print("Está corriendo!")
 
@@ -25,7 +24,7 @@ class Gato(Animal):
     
 
 mi_gato = Gato()
-mi_gato.vivo()
+print(mi_gato.vivo())
 mi_gato.correr()
 mi_gato.dormir()
 mi_gato.ronrronear()
