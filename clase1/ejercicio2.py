@@ -11,7 +11,7 @@ print('Con while')
 i = 0
 string = ""
 while (i < len(words)):
-    string = string + words[i] +";"
+    string = string + words[i] + ";"
     print(words[i])
     i = i + 1
 print('Total while: ' + string)
