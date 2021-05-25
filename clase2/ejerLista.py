@@ -11,4 +11,6 @@ lista.extend(["banana", "cherry"])
 print(lista)
 del lista[0]
 print(lista)
+lista.pop(0)
+print(lista)
 print(lista[-1])
