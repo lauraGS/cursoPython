@@ -1,4 +1,3 @@
-import json
 import unittest
 
 class TestListas(unittest.TestCase):
