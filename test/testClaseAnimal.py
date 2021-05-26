@@ -1,29 +1,7 @@
 
 import unittest
-
-
-class Animal():
-    def __init__(self):
-        self.isVivo = True
-
-    def vivo(self):
-        return self.isVivo
-
-
-class Gato(Animal):
-          
-    def correr(self):
-        return("Está corriendo!")
-
-    def dormir(self):
-        return("Está durmiendo!")
-
-    def ronrronear(self):
-        return("rrrrrrr!")
-
-    def maullar(self):
-       return("Miau")
-
+from ejercicios.clase2.ejerClases import Gato
+from ejercicios.clase2.ejerClases import Animal
 
 
 class TestMetodo(unittest.TestCase):

@@ -10,3 +10,8 @@ class TestPrueba(unittest.TestCase):
         self.assertEqual(list(student.keys()), ["101", "102", "103"])
         self.assertEqual(list(student["101"].keys()), ["class", "Name", "Roll_no"])
 
+
+
+    def test_method2(self):
+        colores = 'Red', 'Black', 'White'
+        self.assertEqual(json.dumps(colores), '["Red", "Black", "White"]')

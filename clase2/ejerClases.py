@@ -1,5 +1,5 @@
 
-class Animal():
+class Animal:
     def __init__(self):
         self.isVivo = True
 
@@ -21,7 +21,6 @@ class Gato(Animal):
 
     def maullar(self):
         print("Miau")
-    
 
 mi_gato = Gato()
 print(mi_gato.vivo())
