@@ -1,7 +1,7 @@
 
 import unittest
-from ejercicios.clase2.ejerClases import Gato
-from ejercicios.clase2.ejerClases import Animal
+from clase2.ejerClases import Gato
+from clase2.ejerClases import Animal
 
 
 class TestMetodo(unittest.TestCase):
