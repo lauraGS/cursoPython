@@ -13,7 +13,8 @@ print(ruta.url)
 tree = html.fromstring(ruta.content)
 
 gender = tree.xpath('//a[@title="Identidad sexual"]/text()')
-listGender = tree.xpath('//div[@class="mw-parser-output"]//table//tbody//td//text()')
+path_list = '//div[@class="mw-parser-output"]//table//tbody//td//text()'
+listGender = tree.xpath(path_list)
 footer = tree.xpath('//div[@class="action-list"]//p/text()')
 
 nameGender = ""
