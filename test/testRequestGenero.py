@@ -7,7 +7,7 @@ class TestPrueba(unittest.TestCase):
 
     def test_method1(self):
 
-        nombre = "Pedro"
+        nombre = "Pablo"
         path_ruta = 'https://es.wikipedia.org/wiki/'+nombre+'_(nombre)'
         ruta = requests.get(path_ruta)
         tree = html.fromstring(ruta.content)
@@ -17,8 +17,8 @@ class TestPrueba(unittest.TestCase):
         footer = tree.xpath('//div[@class="action-list"]//p/text()')
         nameGender = ""
         for item in listGender:
-            if item in ["\nMasculino", "\nFemenino"]:
-                nameGender = item
+            if item.strip() in ["Masculino", "Femenino"]:
+                nameGender = item.strip()
                 break
         print("Género: " + nameGender)
-        self.assertTrue(not nameGender)
+        self.assertFalse(not nameGender)

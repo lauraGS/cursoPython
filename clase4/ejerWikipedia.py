@@ -19,7 +19,7 @@ footer = tree.xpath('//div[@class="action-list"]//p/text()')
 
 nameGender = ""
 for item in listGender:
-    if item in ["\nMasculino", "\nFemenino"]:
+    if item.strip() in ["Masculino", "Femenino"]:
         nameGender = item
         break
 

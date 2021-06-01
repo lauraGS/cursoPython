@@ -14,8 +14,9 @@ while True:
     1) Sumar los dos números
     2) Restar los dos números
     3) Multiplicar los dos números
-    4) Seguir con la calculadora
-    5) Apagar calculadora
+    4) Dividir los dos números
+    5) Seguir con la calculadora
+    6) Apagar calculadora
     """)
     opcion = int(input("Elige una opción: "))
 
@@ -32,9 +33,13 @@ while True:
         resultado = miCalc.multiplicacion(n1, n2)
         print("RESULTADO: El producto de", n1, "*", n2, "es igual a", resultado)
     elif opcion == 4:
+        print(" ")
+        resultado = miCalc.dividir(n1, n2)
+        print("RESULTADO: La división de", n1, "/", n2, "es igual a", resultado)
+    elif opcion == 5:
         n1 = float(input("Introduce tu primer número: "))
         n2 = float(input("Introduce tu segundo número: "))
-    elif opcion == 5:
+    elif opcion == 6:
         break
     else:
         print("Opción incorrecta")
